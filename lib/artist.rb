@@ -22,9 +22,9 @@ class Artist
   
   def genres()
     @songs.each do |song|
-      @genre << song.genre
+      @genres << song.genre
     end
-    @genre.uniq
+    @genres.uniq
   end
   
 end
