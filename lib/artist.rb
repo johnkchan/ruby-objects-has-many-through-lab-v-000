@@ -20,7 +20,10 @@ class Artist
   end
   
   def genres()
-    
+    @songs.each do |song|
+      @genre << song.genre
+    end
+    @genre.uniq
   end
   
 end
