@@ -28,10 +28,8 @@ class Genre
   end
     
   def artists()
-    Artist.all.collect do |artist|
-      if artist.genres.include?(self)
-        artist
-      end
+    songs.collect do |song|
+      song.artist
     end
   end
   
