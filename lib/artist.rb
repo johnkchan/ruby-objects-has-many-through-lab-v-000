@@ -18,15 +18,6 @@ class Artist
     @songs << song
   end
   
-  def songs()
-    @@all.each do |song|
-      if song.artist == @name
-        @songs << song
-      end
-    end
-    @songs
-  end
-  
   def genres()
     
   end
