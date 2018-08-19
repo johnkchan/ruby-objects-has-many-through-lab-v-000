@@ -6,6 +6,15 @@ class Genre
     @@all
   end
   
+  def initialize(name)
+    @name = name
+    @all << self
+  end
+  
+  def new_song(artist, song)
+    
+  end
+  
   
     
   
