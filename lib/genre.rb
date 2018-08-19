@@ -21,7 +21,7 @@ class Genre
   
   def songs()
     Song.all.collect do |song|
-      if song.genre == self
+      if song.genres == self
         song
       end
     end
@@ -29,7 +29,7 @@ class Genre
     
   def artists()
     Artist.all.collect do |artist|
-      if artist.genre == self
+      if artist.genres == self
         artist
       end
     end
