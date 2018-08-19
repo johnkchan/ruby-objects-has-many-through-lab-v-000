@@ -29,7 +29,7 @@ class Genre
     
   def artists()
     Artist.all.collect do |artist|
-      if artist.genres == self
+      if artist.genres.include?(self)
         artist
       end
     end
