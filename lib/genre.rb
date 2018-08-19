@@ -28,6 +28,7 @@ class Genre
   end
     
   def artists()
+    puts songs
     songs.collect do |song|
       song.artist
     end
