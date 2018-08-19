@@ -18,4 +18,5 @@ def Artist
   def genres()
     
   end
+  
 end
