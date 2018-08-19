@@ -6,4 +6,11 @@ class Patient
     @@all
   end
   
+  def patient(name)
+    @name = name
+    @@all << self
+  end
+    
+  
+  
 end
