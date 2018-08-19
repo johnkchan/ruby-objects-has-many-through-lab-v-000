@@ -11,7 +11,7 @@ class Genre
     @name = name
     @songs = []
     @artists = []
-    @all << self
+    @@all << self
   end
   
   def new_song(name, artist)
