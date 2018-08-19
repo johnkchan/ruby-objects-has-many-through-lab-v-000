@@ -14,4 +14,14 @@ class Song
     @@all << self
   end
   
+    
+  def songs()
+    @@all.each do |song|
+      if song.artist == @name
+        @songs << song
+      end
+    end
+    @songs
+  end
+  
 end
