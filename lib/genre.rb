@@ -28,7 +28,11 @@ class Genre
   end
     
   def artists()
-    
+    Artist.all.collect do |artist|
+      if artist.genre == self
+        artist
+      end
+    end
   end
   
 end
