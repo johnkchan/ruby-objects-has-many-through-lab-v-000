@@ -24,6 +24,7 @@ class Artist
         output << song
       end
     end
+    output
   end
   
   def genres()
